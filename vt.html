@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    arr = ["0946611858", "012658582211", '0912345678', '091234545678', '0123456789'];
+
+    function checkPhoneNum(arr) {
+        let regex = /((09|03|08)+([0-9]{8})\b)/g;
+        for (let i = 0; i < arr.length; i++) {
+            if (regex.test(arr[i]))
+                alert("ok");
+            alert("sai")
+        }
+    }
+    checkPhoneNum(arr);
+
+</script>
+
+</body>
+</html>
